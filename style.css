@@ -1,0 +1,272 @@
+body {
+	margin: 0;
+	/*font-family: 'Roboto Slab', serif;*/
+}
+
+header {
+	background: url(./images/bg-3.webp) center center / cover no-repeat;
+	width: 100%;
+	height: 1000px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.text h1 {
+	margin: 0;
+}
+
+.text p {
+
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	height: 15rem;
+	font-family: 'Roboto Slab', serif;
+	flex-direction: column;
+	width: 500px;
+}
+
+span {
+	color: #04a1a8;
+	font-weight: bold;
+}
+
+.button {
+	border: 1px solid #04a1a8;
+	padding: 10px 20px;
+	color: #04a1a8;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.button:hover {
+	color: white;
+	background-color: #04a1a8;
+	transition: color 0.9s, background-color 0.9s;
+}
+
+.about_me {
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 900px;
+
+}
+
+.about_me .content {
+	display: flex;
+	flex-direction: column;
+	height: 700px;
+	justify-content: center;
+	width: 100%;
+}
+
+.about_img {
+	width: 200px;
+	height: 200px;
+	background-color: black;
+}
+
+.about_text {
+	display: grid;
+	grid-template-rows: 200px 200px;
+	grid-template-columns: 200px 200px 200px 200px;
+	grid-gap: 75px;
+	width: 100%;
+	justify-content: center;
+}
+
+.about_text div {
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-weight: 700;
+}
+
+.skills_item {
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+.skills_title {
+	font-size: 50px;
+	text-align: center;}
+
+.content h2 {
+	font-size: 56px;
+	margin-top: 150px;
+	
+}
+
+.projects {
+	height: 1100px;
+	color: white;
+	background-color: #111111;
+	text-align: center;
+	padding: 40px;
+	font-family: 'Roboto Slab', serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projects h2 {
+	font-size: 56px;
+	margin-bottom: 100px;
+}
+
+
+/* Прокеты */
+
+
+.projects_conteiner {
+	display: grid;
+	width: 1200px;
+	grid-gap: 40px;
+	justify-content: center;
+	grid-template-rows: 400px 400px;
+	grid-template-columns: 500px 500px;
+}
+
+.projects_item {
+	width: 500px;
+	height: 400px;
+	/*background-color: white;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 1px solid black;
+	background-color: #141414;
+	border-color: gray;
+	border-radius: 10px;
+}
+
+.project_definition {
+	/*background-color: blue;*/
+	width: 400px;
+	height: 200px;
+
+}
+
+.project_view {
+	/*background-color: blue;*/
+	width: 900px;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+
+
+
+/* Подвал */
+
+footer {
+	background-color: black;
+	width: 100%;
+	height: 150px;
+	font-size: 28px;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	color: white;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer_content {
+	display: flex;
+	
+	justify-content: space-evenly;
+}
+
+.footer_content .button {
+	color: white;
+	border: none;
+}
+
+.footer_content .button a {
+	color: white;
+	text-decoration: none;
+} 
+
+
+@media (max-width: 1200px) {
+	.about_me {
+		height: 3500px;
+	}
+	.about_text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about_me .content {
+		height: 90%;
+	}
+
+	.skills_item {
+		width: 300px;
+		height: 300px;
+	}
+
+	.projects {
+		height: 1600px;
+	}
+
+	.projects h2 {
+		
+	}
+
+	.projects_conteiner {
+		display: flex;
+		flex-direction: column;
+		width: 350px;
+		align-items: center;
+	}
+
+
+	.projects_item{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.project_view img {
+		height: 200px;
+		width: 300px;
+	}
+
+	.project_definition {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.project_definition h3{
+	 	font-size: 25px;
+	}
+
+	.project_definition .button {
+		width: 300px;
+	}
+
+	.footer_content .button {
+		padding: 10px 10px;
+	}
+
+
+
+
+}
